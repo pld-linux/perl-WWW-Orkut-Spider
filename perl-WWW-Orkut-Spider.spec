@@ -22,6 +22,9 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-HTML-Parser >= 1
 BuildRequires:	perl-WWW-Mechanize >= 0.7
 %endif
+# not cached by autodeps somewhy
+Requires:	perl-HTML-Parser >= 1
+Requires:	perl-WWW-Mechanize >= 0.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
