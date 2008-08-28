@@ -17,14 +17,11 @@ Source0:	http://www.cpan.org/modules/by-module/WWW/%{pdir}-%{pnam}-%{version}.ta
 # Source0-md5:	22f998d1a1d8972fda078e21ec5cf870
 URL:		http://search.cpan.org/dist/WWW-Orkut-Spider/
 BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpm-perlprov >= 4.4.9-79
 %if %{with autodeps} || %{with tests}
 BuildRequires:	perl-HTML-Parser >= 1
 BuildRequires:	perl-WWW-Mechanize >= 0.7
 %endif
-# not cached by autodeps somewhy
-Requires:	perl-HTML-Parser >= 1
-Requires:	perl-WWW-Mechanize >= 0.7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
